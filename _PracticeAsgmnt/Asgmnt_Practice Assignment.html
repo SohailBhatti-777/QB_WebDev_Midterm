@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Assignment</title>
+    <script src="https://kit.fontawesome.com/6e087414c7.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            position: fixed;
+            z-index: 100;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            height: 46px;
+            background-color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            line-height: 46px;
+        }
+
+        nav>ul {
+            display: flex;
+            margin-left: 100px;
+        }
+
+        nav>ul>li {
+            list-style-type: none;
+            margin: 0px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        ul+DIV>.fa-brands {
+            color: #1DA1F2;
+            margin-right: 280px;
+            font-size: 22px;
+        }
+
+        div>button {
+            padding: 5px 14px;
+            background-color: #1DA1F2;
+            outline: none;
+            border: none;
+            border-radius: 16px;
+            color: white;
+            font-weight: bolder;
+            margin: 0px 50px 0px 0px;
+            cursor: pointer;
+        }
+        
+        .container {
+            border: 4px solid green;            
+            max-width: 1190px;
+            height: 91vh;
+            display: flex;
+            margin-top: 55px;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .container .pehla {
+            width: 290px;
+            height: 250px;
+            border: 4px solid blue;
+        }
+
+        .container .dosra {
+            height: 400px;
+            width: 400px;
+            border: 4px solid red;
+            background-color: white;
+        }
+
+        .container .tesra {
+            width: 290px;
+            height: 250px;
+            border: 4px solid orange;
+            background-color: white;
+        }
+
+        .back {
+            height: 38%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info {
+            background-color: white;
+            width: 100%;
+            height: 62%;
+        }
+
+        .back>h1 {
+            color: white;
+            font-size: 21px;
+        }
+
+        .back>h1>span {
+            font-size: 25px;
+        }
+
+        .info>img {
+            height: 48px;
+            border-radius: 90px;
+            border: 1px solid white;
+            transform: translate(20px, -20px);
+        }
+
+        #head {
+            font-size: 13px;
+            font-weight: bolder;
+            text-decoration: underline;
+            transform: translate(89px, -50px);
+        }
+
+        #rem {
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        .info ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;            
+            height: 70px;
+
+        }
+
+        .info ul li {
+            margin: 0px 12px;
+            list-style: none;
+        }
+
+        #le {
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        #c {
+            color: #1DA1F2;
+            font-weight: bolder;
+            
+        }
+
+        .dosra>div>div>img {
+            border-radius: 90px;
+            height: 35px;
+            margin: 15px 10px;            
+        }
+
+        .dosra>div>div>h3 {
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .dosra>div>div>p {
+            font-size: 12px;
+        }
+
+        .dosra>div>div>h3>span {
+            color: rgba(0, 0, 0, 0.5);
+            font-weight: 600;
+        }
+
+        .dosra>div>div+div {
+            margin: 10px 0px 10px 0px;
+            
+        }
+        .tesra > div > div + div > button{
+            background-color: transparent;
+            color: #1DA1F2;
+            border: 1px solid #1DA1F2;
+            margin: 5px 10px;
+            font-size: 13px;
+            padding: 2px 10px;
+          
+        }
+         .tesra > div > h2{
+            font-size: 19px;
+            margin: 15px 10px;
+         }
+         .tesra > div + div{
+            margin: 10px 10px;
+         }
+         .tesra :nth-child(4){
+            margin: 10px 10px;
+         } 
+       
+    </style>
+</head>
+
+<body>
+   
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Moments</li>
+                <li>Notifications</li>
+                <li>Messages</li>
+            </ul>
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div><button type="button">Tweet</button></div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="pehla">
+                <div class="back">
+                    <h1><span>R</span>ATATOUILLE</h1>
+                </div>
+                <div class="info">
+                    <img src="https://cdn.vectorstock.com/i/preview-1x/77/43/young-man-head-avatar-cartoon-face-character-vector-21757743.webp" alt="Remmy-Cartoon">
+                    <h1 id="head">Remy <br><span id="rem">@remy</span></h1>
+                    <ul>
+                        <li id="le">Tweets</li>
+                        <li id="le">Following</li>
+                        <li id="le">Followers</li>
+                        <li id="c">5049</li>
+                        <li id="c">324</li>
+                        <li id="c">809</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dosra">
+
+                <div style="display: flex;">
+                    <div><img height="45px" src="https://cdn.vectorstock.com/i/preview-1x/77/43/young-man-head-avatar-cartoon-face-character-vector-21757743.webp" alt="Remmy-Cartoon"></div>
+                    <div>
+                        <h3>Remy <span>@remy Nov 19</span></h3>
+                        <p>I am talking this class called CS1320 and the TAs are all so COol! </p>
+                    </div>
+                </div>
+                <hr>
+                <div style="display: flex;">
+                    <div><img height="45px" src="https://cdn.vectorstock.com/i/preview-1x/77/43/young-man-head-avatar-cartoon-face-character-vector-21757743.webp" alt="Remmy-Cartoon"></div>
+                    <div>
+                        <h3>Remy <span>@remy Nov 19</span></h3>
+                        <p>It's 2007. You just got home from elementory school. Your mom his pizza bagels in the oven.
+                            Ratatouile is the theaters. <br>Life is good </p>
+                    </div>
+                </div>
+                <hr>
+                <div style="display: flex;">
+                    <div><img height="45px" src="https://cdn.vectorstock.com/i/preview-1x/77/43/young-man-head-avatar-cartoon-face-character-vector-21757743.webp" alt="Remmy-Cartoon"></div>
+                    <div>
+                        <h3>Remy <span>@remy Nov 19</span></h3>
+                        <p>Let's make some pasta </p>
+                    </div>
+                </div>
+                <hr>
+                <div style="display: flex;">
+                    <div><img height="45px" src="https://cdn.vectorstock.com/i/preview-1x/77/43/young-man-head-avatar-cartoon-face-character-vector-21757743.webp" alt="Remmy-Cartoon"></div>
+                    <div>
+                        <h3>Remy <span>@remy Nov 19</span></h3>
+                        <p>Let's make some pasta </p>
+                    </div>
+                </div>
+                <hr>
+                <div style="display: flex;">
+                    <div><img height="45px" src="https://cdn.vectorstock.com/i/preview-1x/77/43/young-man-head-avatar-cartoon-face-character-vector-21757743.webp" alt="Remmy-Cartoon"></div>
+                    <div>
+                        <h3>Remy <span>@remy Nov 19</span></h3>
+                        <p>Let's make some pasta </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tesra">
+                <div>
+                    <h2>Who to follow</h2>
+                </div>
+                <div style="display: flex;">
+                    <div><img height="45px" src="https://cdn.vectorstock.com/i/1000x1000/45/45/female-emotions-attractive-cartoon-character-vector-18544545.webp" alt=""></div>
+                    <div><h2 style="font-size: 14px; margin: 8px 10px;" >Linguini <span style="color: rgba(0, 0, 0, 0.5);">@linguini</span></h2>
+                    <button type="button">Follow</button>
+                    </div>
+                </div>
+                <hr>
+                <div style="display: flex;">
+                    <div><img height="45px" src="https://cdn.vectorstock.com/i/preview-1x/77/43/young-man-head-avatar-cartoon-face-character-vector-21757743.webp" alt="Remmy-Cartoon" alt=""></div>
+                    <div><h2 style="font-size: 14px; margin: 8px 10px;" >CS1320 TA <span style="color: rgba(0, 0, 0, 0.5);">@CS1320ta </span></h2>
+                    <button type="button">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+
+</html>
